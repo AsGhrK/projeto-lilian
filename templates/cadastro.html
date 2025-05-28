@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro - Loja Web Flex</title>
+  <link rel="stylesheet" href="../static/style/cadastro.css" />
+  <link rel="stylesheet" href="../static/style/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <h1>Loja Web Flex</h1>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="cadastro.html" class="active">Cadastro</a></li>
+            <li><a href="carrinho.html"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
+            <li><a href="pagamento.html">Pagamento</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+<section class="section-cadastro">
+  <div class="container form-container">
+    <div class="card-bloco">
+      <h3>Dados Pessoais</h3>
+      <form class="form-bloco">
+        <div class="form-group">
+          <label for="nome">Nome Completo</label>
+          <input type="text" id="nome" name="nome" required />
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required />
+        </div>
+        <div class="form-group">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" required />
+        </div>
+        <div class="form-group">
+          <label for="confirmar-senha">Confirmar Senha</label>
+          <input type="password" id="confirmar-senha" name="confirmar-senha" required />
+        </div>
+      </form>
+    </div>
+
+    <div class="card-bloco">
+      <h3>Endereço</h3>
+      <form class="form-bloco">
+        <div class="form-group">
+          <label for="rua">Rua</label>
+          <input type="text" id="rua" name="rua" required />
+        </div>
+        <div class="form-group">
+          <label for="numero">Número</label>
+          <input type="text" id="numero" name="numero" required />
+        </div>
+        <div class="form-group">
+          <label for="complemento">Complemento</label>
+          <input type="text" id="complemento" name="complemento" />
+        </div>
+        <div class="form-group">
+          <label for="bairro">Bairro</label>
+          <input type="text" id="bairro" name="bairro" required />
+        </div>
+        <div class="form-group">
+          <label for="cidade">Cidade</label>
+          <input type="text" id="cidade" name="cidade" required />
+        </div>
+        <div class="form-group">
+          <label for="estado">Estado</label>
+            <select id="estado" name="estado" required>
+          <option value="">Selecione o Estado</option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+        </select>
+        </div>
+        <div class="form-group">
+          <label for="cep">CEP</label>
+          <input type="text" id="cep" name="cep" placeholder="00000-000" required />
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="form-rodape">
+    <button type="submit" class="btn">Cadastrar</button>
+  </div>
+</section>
+
+
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h3>Loja Web Flex</h3>
+          <p>Sua loja online para compras seguras e rápidas.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Links Úteis</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="carrinho.html">Carrinho</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contato</h3>
+          <p>Email: contato@lojawebflex.com</p>
+          <p>Telefone: (11) 1234-5678</p>
+        </div>
+        <div class="footer-col">
+          <h3>Redes Sociais</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Loja Web Flex - Todos os direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../static/js/main.js"></script>
+</body>
+</html>
